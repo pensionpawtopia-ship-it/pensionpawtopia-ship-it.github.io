@@ -1,0 +1,23 @@
+# Pawtopia – Pension canine familiale
+
+> Pension canine familiale à Anoux (54150, Meurthe-et-Moselle, France). Les chiens sont gardés en famille, à la maison, 9 chiens au maximum. Secteur : Pays de Briey, Jarny, et jusqu'à Metz, Longwy, Thionville, Étain et Verdun.
+
+## L'essentiel
+- Adresse : 43 rue Pasteur, 54150 Anoux, France
+- Contact : pension.pawtopia@gmail.com
+- Instagram : https://www.instagram.com/pension.pawtopia/
+- Capacité : 9 chiens maximum
+- Fondatrice : Lidwine, assistante vétérinaire (ASV), titulaire de l'ACACED et du TAV, ancienne maître-chien en sécurité
+- Établissement déclaré à la DDPP, assuré en RC professionnelle, Label Truffe
+- Vétérinaire sanitaire : Clinique Vétérinaire de l'Yrondelle, Jarny
+
+## Fonctionnement
+- Visite test obligatoire avant le premier séjour
+- Arrivée standard à partir de 17 h ; arrivée le matin possible, à convenir
+- Tarifs communiqués après la demande de pré-réservation (premier échange obligatoire)
+- Vaccins à jour exigés, dont la toux du chenil
+- Castration non obligatoire si le chien n'est pas agressif envers ses congénères
+
+## Pages
+- [Formulaire de pré-réservation](https://pensionpawtopia-ship-it.github.io/Pawtopia-Fiche/pawtopia_prereservation.html)
+- [Accueil](https://pensionpawtopia-ship-it.github.io/)
