@@ -23,4 +23,4 @@
 
 ## Pages
 - [Formulaire de pré-réservation](https://pensionpawtopia-ship-it.github.io/Pawtopia-Fiche/pawtopia_prereservation.html)
-- [Accueil](https://pensionpawtopia-ship-it.github.io/)
+- [Accueil](https://pensionpawtopia.fr/)
