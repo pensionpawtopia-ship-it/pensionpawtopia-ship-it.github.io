@@ -5,27 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pension canine familiale près de Briey et Jarny | Pawtopia à Anoux (54)</title>
 <meta name="description" content="Pawtopia, pension canine familiale à Anoux (54150), entre Briey, Jarny et Metz. 9 chiens maximum, vie en famille, encadrement par une ASV diplômée ACACED. Visite test avant chaque premier séjour.">
-<link rel="canonical" href="https://pensionpawtopia-ship-it.github.io/">
+<link rel="canonical" href="https://pensionpawtopia.fr/">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <meta property="og:title" content="Pawtopia – Pension canine familiale à Anoux (54)">
 <meta property="og:description" content="Garde de chiens en famille, 9 chiens maximum, près de Briey, Jarny et Metz.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:image" content="https://pensionpawtopia-ship-it.github.io/balade-foret-meute.webp">
-<meta property="og:url" content="https://pensionpawtopia-ship-it.github.io/">
+<meta property="og:image" content="https://pensionpawtopia.fr/balade-foret-meute.webp">
+<meta property="og:url" content="https://pensionpawtopia.fr/">
 
 <!-- Données structurées : lues par Google et les assistants IA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://pensionpawtopia-ship-it.github.io/#pawtopia",
+  "@id": "https://pensionpawtopia.fr/#pawtopia",
   "name": "Pawtopia – Pension canine familiale",
   "description": "Pension canine familiale à Anoux (Meurthe-et-Moselle). Les chiens vivent en famille, 9 chiens maximum, encadrés par une assistante vétérinaire diplômée (ASV, ACACED, TAV).",
-  "url": "https://pensionpawtopia-ship-it.github.io/",
-  "image": "https://pensionpawtopia-ship-it.github.io/balade-foret-meute.webp",
-  "logo": "https://pensionpawtopia-ship-it.github.io/favicon.png",
+  "url": "https://pensionpawtopia.fr/",
+  "image": "https://pensionpawtopia.fr/balade-foret-meute.webp",
+  "logo": "https://pensionpawtopia.fr/favicon.png",
   "email": "pension.pawtopia@gmail.com",
   "address": {
     "@type": "PostalAddress",
@@ -179,6 +179,19 @@
   .card p{color:var(--gris)}
   @media (max-width:860px){.cards{grid-template-columns:1fr}}
 
+  /* Canicross */
+  .sport{background:var(--blanc)}
+  .sport-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(28px,5vw,64px);align-items:center}
+  .sport-text{display:flex;flex-direction:column;gap:16px;min-width:0}
+  .sport-text p{color:#323c2a}
+  .sport-photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px;min-width:0}
+  .sport-photos figure{margin:0;border-radius:12px;overflow:hidden;position:relative}
+  .sport-photos img{width:100%;height:100%;object-fit:cover;display:block}
+  .sport-photos .wide{grid-column:span 2;aspect-ratio:3/2}
+  .sport-photos .sq{aspect-ratio:4/5}
+  .sport-photos figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;color:#fff;font-weight:700;font-size:.88rem;background:linear-gradient(transparent,rgba(15,25,8,.75))}
+  @media (max-width:860px){.sport-grid{grid-template-columns:1fr}}
+
   /* Galerie */
   .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;grid-auto-flow:dense;gap:14px}
   .gal figure{margin:0;position:relative;overflow:hidden;border-radius:12px;background:var(--sable)}
@@ -274,6 +287,7 @@
     </a>
     <nav class="nav" aria-label="Navigation principale">
       <a href="#pension">La pension</a>
+      <a href="#canicross">Canicross</a>
       <a href="#galerie">Galerie</a>
       <a href="#sejour">Le séjour</a>
       <a href="#infos">Infos pratiques</a>
@@ -374,6 +388,22 @@
   </div>
 </section>
 
+<section class="section sport" id="canicross">
+  <div class="wrap sport-grid">
+    <div class="sport-text">
+      <span class="eyebrow">Sport canin</span>
+      <h2>Notre passion&nbsp;: le canicross</h2>
+      <p>Le canicross, c'est courir relié à son chien, sur les sentiers et en compétition. Je le pratique avec mes chiens, et c'est une passion qui fait partie de notre vie de famille.</p>
+      <p>Cette passion se retrouve au quotidien à Pawtopia : des chiens bien dépensés, des balades en nature, et une attention particulière à l'énergie et au rythme de chaque pensionnaire.</p>
+    </div>
+    <div class="sport-photos">
+      <figure class="wide"><img src="canicross-course.webp" alt="Lidwine en course de canicross avec Myssa, son husky" loading="lazy" width="1200" height="800"><figcaption>En course avec Myssa</figcaption></figure>
+      <figure class="sq"><img src="canicross-malinois.webp" alt="Lidwine et Zuko, son malinois, après une course de canicross" loading="lazy" width="640" height="960"><figcaption>Complicité avec Zuko après l'effort</figcaption></figure>
+      <figure class="sq"><img src="canicross-podium.webp" alt="Lidwine avec Zuko et Myssa sur un trail" loading="lazy" width="720" height="960"><figcaption>Zuko, Myssa et moi : une équipe soudée</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="galerie">
   <div class="wrap">
     <div class="section-head">
@@ -396,6 +426,7 @@
       <figure><img src="damien-chiens-jardin.webp" alt="Damien dans le jardin avec un husky et un berger australien" loading="lazy" width="720" height="960"><figcaption>Damien et la meute</figcaption></figure>
       <figure><img src="damien-spitz.webp" alt="Damien avec un petit spitz" loading="lazy" width="720" height="960"><figcaption>Petits et grands, tous bienvenus</figcaption></figure>
       <figure><img src="damien-terrasse.webp" alt="Damien en terrasse avec un chien bringé" loading="lazy" width="720" height="960"><figcaption>Toujours un mot doux</figcaption></figure>
+      <figure class="big"><img src="balade-meute-gilets.webp" alt="Lidwine en balade avec cinq chiens équipés de gilets orange en lisière de forêt" loading="lazy" width="960" height="720"><figcaption>La meute en balade</figcaption></figure>
     </div>
   </div>
 </section>
