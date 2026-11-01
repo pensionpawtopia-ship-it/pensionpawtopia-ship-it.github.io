@@ -200,8 +200,32 @@
   .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;color:#fff;font-weight:700;font-size:.9rem;background:linear-gradient(transparent,rgba(15,25,8,.75))}
   .gal .big{grid-column:span 2;grid-row:span 2}
   .gal .tall{grid-row:span 2}
+  .gal .wide{grid-column:1/-1;grid-row:span 2}
+  .gal .wide img{object-position:center 70%}
   @media (max-width:860px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}}
   @media (prefers-reduced-motion:reduce){.gal img,.btn{transition:none}}
+
+  /* Avis */
+  .avis{background:var(--sable)}
+  .avis-note{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:4px}
+  .avis-note .etoiles{color:var(--or);font-size:1.3rem;letter-spacing:2px}
+  .avis-note strong{font-family:var(--titre);font-size:1.6rem;color:var(--vert)}
+  .avis-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .avis-card{margin:0;background:var(--blanc);border-radius:var(--rayon);box-shadow:var(--ombre);overflow:hidden;display:flex;flex-direction:column}
+  .avis-card img{width:100%;height:260px;object-fit:cover;object-position:center 30%}
+  .avis-body{padding:24px 26px 26px;display:flex;flex-direction:column;gap:12px}
+  .avis-card .etoiles{color:var(--or);letter-spacing:2px}
+  .avis-card blockquote{margin:0;color:var(--encre);line-height:1.65;white-space:pre-line}
+  .avis-card figcaption{font-weight:800;color:var(--vert)}
+  .avis-card figcaption span{display:block;font-weight:600;font-size:.88rem;color:var(--gris)}
+  .avis-mini{margin-top:24px;columns:3 300px;column-gap:24px}
+  .avis-mini figure{break-inside:avoid;margin:0 0 24px;background:var(--blanc);border-radius:var(--rayon);box-shadow:var(--ombre);padding:22px 24px;display:flex;flex-direction:column;gap:10px}
+  .avis-mini .etoiles{color:var(--or);letter-spacing:2px;font-size:.9rem}
+  .avis-mini blockquote{margin:0;color:var(--encre);line-height:1.6;font-size:.96rem}
+  .avis-mini figcaption{font-weight:800;color:var(--vert);font-size:.95rem}
+  .avis-mini figcaption span{font-weight:600;color:var(--gris)}
+  .avis-cta{margin-top:32px;display:flex;justify-content:center}
+  @media (max-width:860px){.avis-grid{grid-template-columns:1fr}}
 
   /* Étapes */
   .steps{background:var(--vert);color:#fff}
@@ -289,6 +313,7 @@
       <a href="#pension">La pension</a>
       <a href="#canicross">Canicross</a>
       <a href="#galerie">Galerie</a>
+      <a href="#avis">Avis</a>
       <a href="#sejour">Le séjour</a>
       <a href="#infos">Infos pratiques</a>
       <a href="#faq">FAQ</a>
@@ -426,8 +451,90 @@
       <figure><img src="damien-chiens-jardin.webp" alt="Damien dans le jardin avec un husky et un berger australien" loading="lazy" width="720" height="960"><figcaption>Damien et la meute</figcaption></figure>
       <figure><img src="damien-spitz.webp" alt="Damien avec un petit spitz" loading="lazy" width="720" height="960"><figcaption>Petits et grands, tous bienvenus</figcaption></figure>
       <figure><img src="damien-terrasse.webp" alt="Damien en terrasse avec un chien bringé" loading="lazy" width="720" height="960"><figcaption>Toujours un mot doux</figcaption></figure>
-      <figure class="big"><img src="balade-meute-gilets.webp" alt="Lidwine en balade avec cinq chiens équipés de gilets orange en lisière de forêt" loading="lazy" width="960" height="720"><figcaption>La meute en balade</figcaption></figure>
+      <figure class="tall"><img src="terrasse-meute-oslo-bounty-naoum.webp" alt="Un berger australien, un golden retriever, une laïka de Iakoutie et une husky sur la terrasse de la pension" loading="lazy" width="900" height="1200"><figcaption>Oslo, Bounty, Naoum et Myssa sur la terrasse</figcaption></figure>
+      <figure class="tall"><img src="naoum-laika-repos.webp" alt="Naoum, laïka de Iakoutie, au repos sous la fenêtre" loading="lazy" width="900" height="1200"><figcaption>Naoum, sieste bien méritée</figcaption></figure>
+      <figure class="tall"><img src="balade-bounty-naoum.webp" alt="Bounty, jeune golden retriever avec un gilet orange, et Naoum pendant une balade" loading="lazy" width="900" height="1200"><figcaption>Bounty et Naoum en balade</figcaption></figure>
+      <figure class="tall"><img src="sieste-canape-malinois-chat.webp" alt="Un malinois et un chat font la sieste ensemble sur le canapé" loading="lazy" width="900" height="1200"><figcaption>Chiens et chat, même canapé</figcaption></figure>
+      <figure class="wide"><img src="balade-meute-gilets.webp" alt="Lidwine en balade avec cinq chiens équipés de gilets orange en lisière de forêt" loading="lazy" width="960" height="720"><figcaption>La meute en balade</figcaption></figure>
     </div>
+  </div>
+</section>
+
+<section class="section avis" id="avis">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Avis clients</span>
+      <h2>Ils nous ont confié leur chien</h2>
+      <p>Les mots de nos clients, publiés sur notre fiche Google. Merci à chacun d’entre eux !</p>
+      <div class="avis-note"><span class="etoiles" aria-hidden="true">★★★★★</span><strong>5,0</strong><span>sur Google</span></div>
+    </div>
+    <div class="avis-grid">
+      <figure class="avis-card">
+        <img src="naoum-laika-repos.webp" alt="Naoum, laïka de Iakoutie, au repos à la pension" loading="lazy" width="900" height="1200">
+        <div class="avis-body">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote>Nous avons amené notre chienne pour un séjour de 5 jours et tout était parfait. Pas de box, elle a été chouchouté par tout la famille et a eu des longues balades comme elle aime. Nous avons eu des nouvelles tous les jours et autant dire qu'elle s'est bien amusé et a adoré son séjour. Je recommande totalement car les loulous sont accueilli dans une famille aimante et géniale. Encore merci Lidwine et Damien et Naoum reviendra 🐕 ❤️</blockquote>
+          <figcaption>Marine &amp; Kenny<span>Propriétaires de Naoum · séjour de 5 jours</span></figcaption>
+        </div>
+      </figure>
+      <figure class="avis-card">
+        <img src="balade-bounty-naoum.webp" alt="Bounty, jeune golden retriever, en balade" loading="lazy" width="900" height="1200">
+        <div class="avis-body">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <blockquote>Je recommande Pawtopia les yeux fermés !
+Lidwine et Damien sont vraiment géniaux et très compétents. Je leur confie mon chiot de 8 mois en toute confiance et sans aucune crainte.
+La maison et le jardin sont accueillants et chaleureux, et Bounty a tout l’espace nécessaire pour jouer, se dépenser et se reposer.
+Les balades sont adaptées et régulières.
+Le fait qu’ils aient deux chiens est aussi un vrai plus pour lui permettre de jouer avec eux ; d'apprendre les codes et de bien se sociabiliser.
+Ils sont également très arrangeants sur les horaires (même sur une garde en urgence) et donnent régulièrement des nouvelles.
+Bref, Bounty adore aller chez "Nounou", je suis satisfaite à 100 %. C’est un vrai bonheur de pouvoir laisser son chien à des personnes de confiance, qui aiment réellement les chiens et s'en occupent comme si c'était le leur.</blockquote>
+          <figcaption>Estelle<span>Propriétaire de Bounty</span></figcaption>
+        </div>
+      </figure>
+    </div>
+    <div class="avis-mini">
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Je recommande cette pension les yeux fermés ! Ma petite cocker de 4 mois y a été gardée et tout s’est merveilleusement bien passé. […] J’ai eu des nouvelles régulièrement, avec plein de balades, des moments de jeu et énormément d’affection. On sent qu’ils prennent soin des chiens comme des membres de leur propre famille. Ma petite est revenue heureuse, épanouie et parfaitement en confiance. […] Les prochaines vacances de ma boule de poil sont déjà réservés 🥰</blockquote>
+        <figcaption>Océane <span>· sa cocker de 4 mois</span></figcaption>
+      </figure>
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Super pension où notre chien est traité comme un membre de la famille. Arlo a passé de très bonnes vacances sportives en compagnie des autres chiens. Je recommande pawtopia à 100%!</blockquote>
+        <figcaption>Céline <span>· Arlo</span></figcaption>
+      </figure>
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Merci d’avoir garder Iron les photos et vidéos sont excellentes. Merci de me le reprendre au mois de juillet. À très vite</blockquote>
+        <figcaption>Steven <span>· Iron</span></figcaption>
+      </figure>
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Luffy a été en pension pendant 16 jours et les prestations ont été au top. Très bon accueil, encadrement, travail effectué pour éviter de tirer, de prendre les cailloux également... Une pension au top et à tarifs très correct. Damien et Lidwine sont vraiment très sympathique et très à l'écoute. Je recommande vivement, je sais que mon chien est entre de bonnes mains et je peux partir tranquille.</blockquote>
+        <figcaption>Rita <span>· Luffy</span></figcaption>
+      </figure>
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Une pension au top , pas de box, ce qui était pour moi un point important, on voit que les propriétaires de la pension adorent les animaux ce qui fait que Kiara a passer un excellent séjour chez pawtopia, elle se sentait comme à la maison. Ce sera désormais là-bas qu’elle ira !</blockquote>
+        <figcaption>Jeff <span>· Kiara</span></figcaption>
+      </figure>
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Pension au top, les animaux ont eu leur colonie de vacances pendant nos vacances &lt;3 au petit soin, sorties régulières, câlins a volonté, jeux ..que vouloir de plus? Je recommande vivement</blockquote>
+        <figcaption>Nadine <span>· Murphy et Moon</span></figcaption>
+      </figure>
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Mila labrador de 3 ans complètement folle, en surpoids et aimant énormément le contact avec l humain. Vous avez su etre a l écoute de ses besoins et donner des nouvelles a nos filles de leur chienne régulièrement. Grâce a vous également elle est entrée dans une perte de poids […] Mila reviens chez vous en juillet pour son plus grand bonheur de retrouver les copains 🥰 Encore merci on pars sereinement</blockquote>
+        <figcaption>Tiphaine <span>· Mila</span></figcaption>
+      </figure>
+      <figure>
+        <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>Un séjour incroyable pour Alya ! Je recommande à 100% J’ai eu des nouvelles régulièrement de mon chien et elle a été gâtée que ce soit en affection, balade et j’en passe ! Toutes la familles a pris soin de mon chien et mon petit bébé berger américain a été bien reçu et je ne regrette pas d’avoir confié mon chien.</blockquote>
+        <figcaption>Chloé <span>· Alya</span></figcaption>
+      </figure>
+    </div>
+    <div class="avis-cta"><a class="btn btn-or" href="https://maps.google.com/?cid=17359339288577478393" target="_blank" rel="noopener">Lire tous nos avis sur Google</a></div>
   </div>
 </section>
 
